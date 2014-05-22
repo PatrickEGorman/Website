@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+{% include "style.css" %}
+</style>
+
+    <title>Home</title>
+    <script>
+        function add_video()
+        {
+        var str = document.getElementById('TEXTBOX_ID').value;
+        var video = str.slice(-11);
+        window.location.replace('/'+video);
+        }
+    </script>
+
+</head>
+<body>
+<p>Home</p>
+
+    <img class = "image" src="http://www.clker.com/cliparts/y/N/f/W/W/Q/python-th.png" />
+<br>
+{%for x in video_ids%}
+<a class="link" href ='/{{x}}'> {{input[x]}} </a>
+<br>
+{%endfor%}
+<input type="text" id="TEXTBOX_ID" class = "textbox">
+<button type="button" class="button" onclick="add_video()">Add Video</button>
+
+<footer>Image from <a class ="clker" href='http://www.clker.com/'>Clker.com</a></div>
+</footer>
+</body>
+</html>

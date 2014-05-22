@@ -1,0 +1,56 @@
+body
+{background: radial-gradient(red,black);
+text-align:center;
+}
+
+
+p
+{color: turquoise;
+font-size: 22;
+font: impact;}
+
+
+.link {color:aqua;
+        font-size: 18;
+        font: times new roman;
+        }
+a:focus{color:green;}
+a:hover {color:red;}
+a:active {color:black;}
+
+
+.textbox {
+    background-color: green;
+    border: solid 2px #646464;
+    outline: solid 1px black;
+    padding: 2px 2px;
+    color: turquoise;
+}
+.textbox:hover {
+    background-color: red;
+}
+.textbox:focus {
+    background-color: black;
+}
+
+.button {
+    background-color: light-green;
+    color: turquoise;
+    border: 1 px black;
+}
+.button:hover {
+    background-color: red
+}
+.button:focus {
+    background-color: black;
+}
+
+.frame {
+    border: solid 2px maroon;
+}
+.clicker {
+    text-align: bottom;
+}
+.image {
+    border: 100 px radial-gradient(black,red);
+}

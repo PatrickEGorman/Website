@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+{% include "style.css" %}
+</style>
+<p>{{object}}</p>
+<script>
+function add_video()
+        {
+        var str = document.getElementById('TEXTBOX_ID').value;
+        var video = str.slice(-11);
+        window.location.replace('/'+video);
+        }
+</script>
+</head>
+
+<body>
+    <iframe width="420" height="345" class = "frame"
+    src={{link}}>
+    </iframe>
+    <br>
+
+{%for x in video_ids%}
+<a class = "link" href ='/{{x}}'> {{input[x]}} </a>
+<br>
+{%endfor%}
+
+<input type="text" id="TEXTBOX_ID" class = "textbox">
+<button type="button" class="button" onclick = add_video()>Add Video</button>
+
+</body>
+</html>
